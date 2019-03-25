@@ -1,0 +1,268 @@
+.supply {
+    position: relative;
+}
+
+.supply .img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.supply .text {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.supply .text h4 {
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.supply .text p {
+    margin-bottom: 0;
+}
+
+.supply .mobile-text {
+    display: none;
+}
+
+.supply .supply-left {
+    border-right: 1px solid #443F54;
+}
+
+.supply .supply-right {
+    padding-left: 3em;
+    box-sizing: border-box;
+}
+
+.supply .item {
+    margin-bottom: 1em;
+}
+
+.supply .item p {
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: #443F54;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.tracing h2.center,
+.supply h2.center,
+.detection h2.center {
+    font-size: 1.5em;
+    color: #000000
+}
+
+.tracing p.center,
+.supply p.center,
+.detection p.center {
+    padding: 0 15%;
+    text-align: center;
+}
+
+.supply-case {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.supply-case .supply-item {
+    padding: 0 4em;
+}
+
+.supply-case .supply-item h4 {
+    font-size: 1.5em;
+    color: #443F54;
+    margin: 1em 0;
+}
+
+.supply-case .supply-item p {
+    font-size: 1em;
+    color: #443F54;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.detection .detection-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detection-content .item {
+    padding: 2em 1em;
+    background-color: #F5F7FA;
+}
+
+.detection-content .item p {
+    font-size: 1em;
+    color: #443F54;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.detection-content .item p span {
+    font-weight: 600;
+    color: #000;
+}
+
+/* 
+.about4_main {
+    position: relative;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.line {
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    left: 26px;
+    z-index: -1;
+}
+
+.about4_main ul li {
+    padding-left: 25px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.about4_main ul li::before {
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    background-color: #0079F5;
+}
+
+.about4_main ul li:last-child {
+    margin-bottom: 0px;
+} */
+
+@media(max-width:768px) {
+    .io-lobelia .banner.banner-curb {
+        background: url(../../images/image/bg2.png) top center no-repeat;
+    }
+
+    .banner.banner-full {
+        min-height: 55vh;
+    }
+
+    .banner-content .mis-title h2 {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .banner-content .mis-title h5 {
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+
+    .supply .img {
+        position: inherit;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        text-align: center;
+    }
+
+    .supply .text {
+        display: none;
+    }
+
+    .supply .mobile-text {
+        display: block;
+    }
+
+    .supply .mobile-text p {
+        text-align: center;
+        color: #443F54;
+        font-size: 1.2em;
+        font-weight: 400;
+        margin: 1em 0 2em;
+    }
+
+    .supply .supply-left {
+        border-right: 0px;
+    }
+
+    .supply .supply-right {
+        padding: 10px;
+        background-color: #F5F7FA;
+    }
+
+    .tracing h2.center,
+    .supply h2.center,
+    .detection h2.center {
+        font-size: 1em;
+        color: #000000
+    }
+
+    .supply-case .supply-item {
+        padding: 10px;
+        width: 100%;
+        border: 1px solid #B6B6B6;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+    }
+
+    .supply-case .supply-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .detection .detection-content {
+        margin-top: 2em;
+    }
+}
+
+@media(min-width:768px) {
+    .io-lobelia .banner.banner-curb {
+        background: url(../../images/image/bg2.png) top center no-repeat;
+    }
+
+    .banner.banner-full {
+        min-height: 55vh;
+    }
+
+    .banner-content {
+        width: 70%;
+        margin-left: 20%;
+    }
+
+    .banner-content .mis-title h2 {
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+
+    .banner-content .mis-title h5 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .supply .text {
+        top: 60%;
+    }
+}
+
+@media (min-width:991px) {
+    .io-lobelia .banner.banner-curb {
+        background: url(../../images/image/bg3.png) top center no-repeat;
+    }
+
+    .banner.banner-full {
+        min-height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .banner.banner-full {
+        height: 65vh;
+    }
+}
